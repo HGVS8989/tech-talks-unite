@@ -17,10 +17,11 @@ const Dashboard: React.FC = () => {
       label: college
     }));
 
+  // Define event types with explicitly typed values to match EventType
   const eventTypes = [
-    { value: 'hackathon', label: 'Hackathon' },
-    { value: 'tech-talk', label: 'Tech Talk' },
-    { value: 'workshop', label: 'Workshop' }
+    { value: 'hackathon' as EventType, label: 'Hackathon' },
+    { value: 'tech-talk' as EventType, label: 'Tech Talk' },
+    { value: 'workshop' as EventType, label: 'Workshop' }
   ];
 
   // Filter events based on selected filters
